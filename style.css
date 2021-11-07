@@ -1,0 +1,56 @@
+body{
+	background: #000900;
+	user-select: none;
+}
+#wrapper{
+	position: absolute;
+}
+#gamecontainer{
+	width: 640px;
+	height: 480px;
+	background: url(images/splashscreen.png);
+}
+.gamelayer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+
+}
+#gamestartscreen{
+	padding-top: 250px;
+	text-align: center;
+}
+#gamestartscreen img{
+	margin:10px;
+	cursor: pointer; 
+}
+#levelselectscreen{
+	padding-top: 150px;
+	padding-left: 50px;
+}
+#levelselectscreen input {
+	margin: 20px;
+	cursor: pointer;
+	background-color: red; 
+	color: yellow;
+	font-size: 20px;
+	width: 64px;
+	height: 64px;
+	border: 0;
+	/* Remove the default blue border when an input is selected */
+	outline: 0;
+}
+
+/*loading screen*/
+#loadingscreen {
+background: rgba(100, 100, 100, 0.5);
+}
+#loadingmessage {
+margin-top: 400px;
+text-align: center;
+height: 48px;
+color: white;
+background: url("images/loader.gif") no-repeat center;
+font: 12px Arial;
+}

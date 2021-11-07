@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Froot Wars</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="gamecontainer">
+			
+			<canvas id="gamecanvas" width="640" height="480" class="gamelayer">
+				
+			</canvas>
+
+			<div id="scorescreen" class="gamelayer">
+				<img src="images/sound.png" alt="Toogle Music" id="togglemusic">
+				<img src="images/prev.png" alt="Restart Level">
+				<span id="score">Score: 0</span>
+			</div>
+
+			<div id="gamestartscreen" class="gamelayer">
+				<img src="images/play.png" alt="Play Game" onclick="game.showLevelScreen()"><br>
+				<img src="images/settings.png" alt="Settings">
+			</div>
+
+			<div id="levelselectscreen" class="gamelayer">
+				
+			</div>
+
+			<div id="loadingscreen" class="gamelayer">
+				<div id="loadingmessage"></div>
+			</div>
+
+			<div id="endingscreen" class="gamelayer">
+				<div>
+					<p id="endingmessage" >The level is Over Message</p>
+					<p id="playcurrentlevel" class="endingoption" ><img src="images/prev.png" alt="Replay">Replay Current Level</p>
+					<p id="playnextlevel" class="endingoption" ><img src="images/next.png" alt="Next">Play next Level</p>
+					<p id="returntolevelscreen" class="endingoption" ><img src="images/return.png" alt="Return">Return to Level Screen</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
